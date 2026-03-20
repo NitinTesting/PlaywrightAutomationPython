@@ -5,4 +5,4 @@ class ConfirmationPage:
 
     def verifyProductOnConfirmationPage(self, product_name):
         final_product = self.confirmationPageProduct.first.text_content()
-        assert final_product == product_name
+        assert final_product == product_name,"Final Product:{} is not as expected:{}".format(final_product,product_name)
