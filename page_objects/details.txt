@@ -1,0 +1,37 @@
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTY1ZjY1OWM5NDE2NDZiN2E5NGIwMWYiLCJ1c2VyRW1haWwiOiJOcWF0ZXN0QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjkyMjAwMDk2NDgsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NzI1MjQ1NzgsImV4cCI6MTgwNDA4MjE3OH0.dy3QOxp6CjXhNF5TDWonFnm2R2xaBwch7yuv-HSPLXg",
+    "userId": "6965f659c941646b7a94b01f",
+    "message": "Login Successfully"
+}
+
+{userEmail: "Nqatest@gmail.com", userPassword: "testQA@1111"}
+userEmail
+:
+"Nqatest@gmail.com"
+userPassword
+:
+"testQA@1111"
+
+https://rahulshettyacademy.com/api/ecom/auth/login
+
+
+
+https://rahulshettyacademy.com/api/ecom/order/create-order
+{orders: [{country: "India", productOrderedId: "6960eac0c941646b7a8b3e68"}]}
+
+
+content-type
+application/json
+
+authorization
+
+
+{
+    "orders": [
+        "69a69bf1415d779f9b53741f"
+    ],
+    "productOrderId": [
+        "6960eac0c941646b7a8b3e68"
+    ],
+    "message": "Order Placed Successfully"
+}
