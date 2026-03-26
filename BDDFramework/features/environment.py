@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 from playwright.sync_api import sync_playwright
 
+#runs before all
 def before_all(context):
     context.playwright = sync_playwright().start()
     load_dotenv()
