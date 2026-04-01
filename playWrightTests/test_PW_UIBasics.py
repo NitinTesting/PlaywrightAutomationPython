@@ -15,7 +15,7 @@ def test_Ui_basic(page: Page):
     sign_in = page.get_by_role("button", name="Sign In")
     sign_in.click()
 
-
+@pytest.mark.nitin
 def test_childWindow_handle(page: Page):
     page.goto("https://rahulshettyacademy.com/loginpagePractise/")
     blinkingTxt = page.locator(".blinkingText")
@@ -52,7 +52,7 @@ def test_alertsAndPopups(page: Page):
     page.on("dialog", actionOnDealogDismiss)
     page.locator("#alertbtn").click()
 
-
+@pytest.mark.nitin
 def test_show_hide(page: Page):
     page.goto("https://rahulshettyacademy.com/AutomationPractice/")
     displayedText = page.locator("#displayed-text")
