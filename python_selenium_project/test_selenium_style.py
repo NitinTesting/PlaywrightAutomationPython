@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 import time
+from selenium.webdriver import ActionChains
 
 pytest
 
@@ -32,6 +33,8 @@ def test_selenium_cases():
     # cart_product = driver.find_element("//*[@class='cartSection']//h3")
     cart_product = wait.until(expected_conditions.visibility_of_element_located((By.XPATH,"//*[@class='cartSection']//h3")))
     print(cart_product.text)
+    action = ActionChains(driver)
+    action.move_to_element(cart_product).perform()
 
 
 
