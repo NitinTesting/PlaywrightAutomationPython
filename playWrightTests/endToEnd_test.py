@@ -1,6 +1,9 @@
+import pytest
+
 from page_objects.poController import PoController
 from Data.data import Data
 
+@pytest.mark.nitin
 def test_endToEnd_inChrome(setupChromeBrowser):
     webContext = setupChromeBrowser
     page = webContext.new_page()
